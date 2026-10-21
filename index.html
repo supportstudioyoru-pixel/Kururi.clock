@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kururi Clock サポート</title><style>
+:root{--bg:#f5f5f7;--card:#fff;--ink:#222;--sub:#6b6b73;--line:#e2e2e6;--accent:#5b66a0}
+@media(prefers-color-scheme:dark){:root{--bg:#16171b;--card:#1f2025;--ink:#ececf0;--sub:#9a9aa5;--line:#2e2f36;--accent:#9aa5e0}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Segoe UI",sans-serif}
+main{max-width:720px;margin:0 auto;padding:40px 20px 80px}
+header{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:28px;gap:12px;flex-wrap:wrap}
+h1{font-size:28px;font-weight:300;letter-spacing:.04em;margin:0}h2{font-size:18px;font-weight:600;margin:0 0 10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin-bottom:18px}
+a{color:var(--accent)}nav a{margin-right:14px;font-size:14px}.sub{color:var(--sub);font-size:14px}
+details{border-top:1px solid var(--line);padding:12px 0}details:first-of-type{border-top:0}summary{cursor:pointer;font-weight:600}
+details p{margin:8px 0 0}ul{padding-left:1.2em;margin:.4em 0}footer{color:var(--sub);font-size:13px;margin-top:30px}
+</style></head>
+<body><main>
+<header><h1>Kururi Clock</h1><nav><a href="privacy.html">プライバシーポリシー</a><a href="en/index.html">English</a></nav></header>
+
+<div class="card"><h2>Kururi Clock について</h2>
+<p>3Dデータをターンテーブルのように回しながら表示する、デスク時計アプリです。ポモドーロ風のタイマーも使えます。</p>
+<p class="sub">動作環境: iPhone / iOS 17.0 以降</p></div>
+<div class="card"><h2>よくある質問</h2><details><summary>対応しているデータ形式は?</summary><p>STL・PLY・GLB・USDZ に対応しています。ユーザーデータの読み込みは有料版の機能です。</p></details><details><summary>安全なデータサイズは?</summary><p>読み込めるファイルは 50MB までです。スムーズに表示するには、10MB 以下、ポリゴン数(PLY の点群は点の数)で 50 万程度までをおすすめします。重いデータは、デシメーション(ポリゴン数の削減)アプリなどで軽くしてからお使いください。</p></details><details><summary>色は表示されますか?</summary><p>PLY(頂点カラー)と USDZ(素材の色)は色付きで表示できます。STL と GLB はシルエット表示のみです。設定の「データ表示」で切り替えられます。</p></details><details><summary>モデルが横倒し・逆さまに見えます。</summary><p>設定の「データの上方向」で Z-up と Y-up を切り替えてください。「自動」は形式から判断します。</p></details><details><summary>設定画面はどう開きますか?</summary><p>3Dデータの表示部分をダブルタップしてください。</p></details><details><summary>アプリを閉じてもタイマーは動きますか?</summary><p>はい。終了時刻を記録しているので、別のアプリを使っていても通知でお知らせします(通知の許可が必要です)。</p></details><details><summary>電池を多く使いますか?</summary><p>3Dデータを滑らかに回転させ続けるため、画面をつけたままにすると電池の消費が増え、本体が温かくなることがあります。長く使うときは充電しながらがおすすめです。節約したいときは、設定の「画面の自動ロック」をオフにしてください。</p></details><details><summary>購入を復元したい。</summary><p>設定の「購入を復元」を押してください。同じ Apple ID なら購入済みの状態に戻ります。</p></details><details><summary>iPad で使えますか?</summary><p>このバージョンは iPhone 専用です。iPad には対応していません。</p></details></div>
+<div class="card"><h2>お問い合わせ</h2>
+<p>不具合のご報告やご質問は、次のいずれかへお寄せください。</p>
+<ul><li>GitHub Issues: <a href="https://github.com/supportstudioyoru-pixel/Kururi.clock/issues">https://github.com/supportstudioyoru-pixel/Kururi.clock/issues</a></li></ul>
+<p class="sub">不具合のご報告には、機種名・iOS のバージョン・アプリのバージョン(設定画面の下部に表示)・再現手順を添えていただけると助かります。</p></div>
+
+<footer>© 2026 Studio Yoru</footer>
+</main></body></html>

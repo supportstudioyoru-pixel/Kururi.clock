@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kururi Clock Support</title><style>
+:root{--bg:#f5f5f7;--card:#fff;--ink:#222;--sub:#6b6b73;--line:#e2e2e6;--accent:#5b66a0}
+@media(prefers-color-scheme:dark){:root{--bg:#16171b;--card:#1f2025;--ink:#ececf0;--sub:#9a9aa5;--line:#2e2f36;--accent:#9aa5e0}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Segoe UI",sans-serif}
+main{max-width:720px;margin:0 auto;padding:40px 20px 80px}
+header{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:28px;gap:12px;flex-wrap:wrap}
+h1{font-size:28px;font-weight:300;letter-spacing:.04em;margin:0}h2{font-size:18px;font-weight:600;margin:0 0 10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin-bottom:18px}
+a{color:var(--accent)}nav a{margin-right:14px;font-size:14px}.sub{color:var(--sub);font-size:14px}
+details{border-top:1px solid var(--line);padding:12px 0}details:first-of-type{border-top:0}summary{cursor:pointer;font-weight:600}
+details p{margin:8px 0 0}ul{padding-left:1.2em;margin:.4em 0}footer{color:var(--sub);font-size:13px;margin-top:30px}
+</style></head>
+<body><main>
+<header><h1>Kururi Clock</h1><nav><a href="privacy.html">Privacy Policy</a><a href="../index.html">日本語</a></nav></header>
+
+<div class="card"><h2>About Kururi Clock</h2>
+<p>A desk clock app that shows a 3D model turning like a turntable. It also includes a Pomodoro-style timer.</p>
+<p class="sub">Requires iPhone with iOS 17.0 or later.</p></div>
+<div class="card"><h2>FAQ</h2><details><summary>Which file types are supported?</summary><p>STL, PLY, GLB and USDZ. Loading your own data is a feature of the paid version.</p></details><details><summary>What data size is safe?</summary><p>Files up to 50 MB can be loaded. For smooth display we recommend 10 MB or less and about 500,000 polygons (or points, for PLY point clouds). Please reduce heavy data first with a decimation app.</p></details><details><summary>Are colors shown?</summary><p>PLY (vertex colors) and USDZ (material colors) can be shown in color. STL and GLB are shown as silhouettes only. Switch under “Display” in Settings.</p></details><details><summary>The model looks sideways or upside down.</summary><p>Switch between Z-up and Y-up under “Up axis” in Settings. “Auto” decides based on the file format.</p></details><details><summary>How do I open Settings?</summary><p>Double-tap the area where the 3D model is displayed.</p></details><details><summary>Does the timer keep running if I leave the app?</summary><p>Yes. The end time is recorded, so you get a notification when it finishes even while using another app (notifications must be allowed).</p></details><details><summary>Does it use a lot of battery?</summary><p>Kururi Clock keeps the 3D model rotating smoothly, so leaving the screen on uses more battery than usual and the device may get warm. For long use as a desk clock, keep it on a charger. To save battery, turn off “Auto-Lock” in Settings.</p></details><details><summary>How do I restore my purchase?</summary><p>Tap “Restore Purchases” in Settings. With the same Apple ID, your purchase will be restored.</p></details><details><summary>Does it work on iPad?</summary><p>This version is for iPhone only. iPad is not supported.</p></details></div>
+<div class="card"><h2>Contact</h2>
+<p>For bug reports and questions, please use one of the following.</p>
+<ul><li>GitHub Issues: <a href="https://github.com/supportstudioyoru-pixel/Kururi.clock/issues">https://github.com/supportstudioyoru-pixel/Kururi.clock/issues</a></li></ul>
+<p class="sub">When reporting a problem, please include your device model, iOS version, app version (shown at the bottom of Settings) and steps to reproduce.</p></div>
+
+<footer>© 2026 Studio Yoru</footer>
+</main></body></html>
